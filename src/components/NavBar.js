@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-//import logo from '../assets/img/logo-lima.png';
+import logo from '../assets/img/logo-lima.png';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Login } from '../pages/Login';
 import navIcon1 from '../assets/img/shopping-cart.png';
@@ -32,7 +32,7 @@ export const NavBar = (Login) => {
       <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
          <Container>
             <Navbar.Brand href="/">
-               <img  alt="Logo" />
+               <img src={logo} alt="Logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                <span className="navbar-toggler-icon" />

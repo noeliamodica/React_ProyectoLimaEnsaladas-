@@ -1,7 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { ProductCard } from './ProductCard';
-// import colorSharp2 from "../assets/img/color-sharp2.png";
-//import 'animate.css';
+import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import './Products.css';
 import { useEffect, useState } from 'react';
