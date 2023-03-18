@@ -1,15 +1,26 @@
-import { Col } from 'react-bootstrap';
+import Crispy from '../assets/img/Crispy.png';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
-export const ProductCard = ({ name, description, image }) => {
-   return (
-      <Col size={12} sm={6} md={4}>
-         <div className="proj-imgbx">
-            <img src={image} alt="ensalada" />
-            <div className="proj-txtx">
-               <h4>{name}</h4>
-               <span>{description}</span>
-            </div>
-         </div>
-      </Col>
-   );
-};
+export function ProductCard( {data}) {
+  return (
+    <Row xs={1} md={1} className="g-3">
+      {Array.from({ length: 1 }).map((_, idx) => (
+        <Col>
+          <Card>
+            <Card.Img variant="top" src={data.imagen} />
+            <Card.Body>
+              <Card.Title>{data.nombre}</Card.Title>
+              <Card.Text>
+                {data.ingredientes}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  );
+}
+
+
