@@ -6,7 +6,7 @@
         "base": "Mix de verdes",
         "aderezo": "Ranch",
         "ingredientes": "Mix de verdes, pollo, huevo, zanahoria, queso sardo rayado, tomates cherrys y aderezo ranch.",
-        "imagen": "/img/products/Clásica.jpeg",
+        "imagen": "https://www.recetassinlactosa.com/wp-content/uploads/2016/02/Ensalada-mixta-1.jpg",
         "precio": 850,
         "status": "MasVendido"
     },
@@ -16,7 +16,7 @@
         "base": "Rúcula y fideos(penne rigatti)",
         "aderezo": "Mostaza y miel",
         "ingredientes": "Rúcula, penne rigatti, pollo, tomates secos, nueces, queso azul y aderezo de mostaza y miel.",
-        "imagen": "/assets/img/Cala1.jpg",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRm1Z1J-UlC5XIapV3u02kWtghoyc7xLs1fKLywWLFjtzHe4RumD5RoLRLFVENquq2U8&usqp=CAU",
         "precio": 850,
         "status": "MasVendido"
     },
@@ -26,7 +26,7 @@
         "base": "Mix de verdes",
         "aderezo": "Caesar",
         "ingredientes": "Mix de verdes, pollo, croûtons, queso sardo rayado, tomates cherrys y aderezo caesar.",
-        "imagen": "/assets/img/Caesar.jpeg",
+        "imagen": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/755f697272cbcdc6e5df2adb44b1b705.jpg",
         "precio": 850,
         "status": "MasVendido"
     },
@@ -36,7 +36,7 @@
         "base": "Mix de verdes",
         "aderezo": "Caesar",
         "ingredientes": "Mix de verdes, pollo rebozado con pan rallado y copos de maiz, croûtons, queso sardo rayado, tomates cherrys y aderezo caesar.",
-        "imagen": "/assets/img/Crispy.png",
+        "imagen": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/755f697272cbcdc6e5df2adb44b1b705.jpg",
         "precio": 850,
         "status": "MasVendido"
     },
@@ -46,7 +46,7 @@
         "base": "Rúcula y fideos(penne rigatti)",
         "aderezo": "Reducción de aceto balsámico",
         "ingredientes": "Rúcula, penne rigatti, pastrón feteado, queso tybo en cubos, morron rojo de conserva, nueces y reducción dulce de aceto balsámico.",
-        "imagen": "/assets/img/Pastrón.png",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitFrGuaVyDINMG9IWJ0KIQY0Gb4Bad0pm9SrG71ftcHsJj8ATWiNgP-2NPQf3XDH9OKA&usqp=CAU",
         "precio": 870
     },
     {
@@ -55,7 +55,7 @@
         "base": "Rúcula",
         "aderezo": "Vinagreta (Oliva, Aceto, Vinagre y Pimienta)",
         "ingredientes": "Rúcula, pollo, queso azul, nueces, peras en almíbar y vinagreta.",
-        "imagen": "/assets/img/Peras.jpg",
+        "imagen": "https://www.recetasjudias.com/wp-content/uploads/2015/12/Ensalada-de-Peras-y-Nueces-caramelizadas.jpg",
         "precio": 850
     },
     {
@@ -64,7 +64,7 @@
         "base": "Rúcula y fideos(penne rigatti)",
         "aderezo": "Reducción dulce de aceto balsámico y pesto genovés",
         "ingredientes": "Rúcula, penne rigatti, jamón crudo feteado, queso mozzarela en trozos, tomates secos, reducción dulce de aceto balsámico y pesto genovés.",
-        "imagen": "/assets/img/Crudo.jpg",
+        "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/09/ensalada-de-brocoli-con-mayonesa-receta.jpg",
         "precio": 870
     },
     {
@@ -73,7 +73,7 @@
         "base": "Mix de verdes",
         "aderezo": "Mostaza y miel",
         "ingredientes": "Mix de verdes, pollo, queso brie, tomates cherrys, croûtons, nueces, y aderezo de mostaza y miel.",
-        "imagen": "/assets/img/Brie.jpeg",
+        "imagen": "https://okdiario.com/img/2014/07/08/ensalada-de-rucula-y-queso-brie.jpg",
         "precio": 870
     },
     {
@@ -82,7 +82,7 @@
         "base": "Rúcula",
         "aderezo": "Vinagreta",
         "ingredientes": "Mix de verdes, atún de lata (en lomitos), brócoli, arroz yamani, tomates cherrys, cebolla morada y vinagreta.",
-        "imagen": "/assets/img/AtúnEnsalada.jpg",
+        "imagen": "https://i1.wp.com/irecetasfaciles.com/wp-content/uploads/2021/09/Ensalada-de-atun.jpg?fit=1280%2C720&ssl=1",
         "precio": 750
     },
     {
@@ -92,6 +92,6 @@
         "ingredientes": "Rúcula, frutilla, panceta, queso brie, nueces y reducción dulce de aceto balsámico.",
         "precio": 870,
         "id": "ensalada1669933701639",
-        "imagen": "/assets/img/Ensalada de Frutillas-1669933701630.png"
+        "imagen": "http://www.lucullus.ar/wp-content/themes/lucullus2/common/image.php?image=http://www.lucullus.ar/wp-content/uploads/2016/09/Salade-fraise-avocat.jpg&width=750&height=450&cropratio=false"
     }
 ]

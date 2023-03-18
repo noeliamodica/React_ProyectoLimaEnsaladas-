@@ -1,25 +1,27 @@
-import Crispy from '../assets/img/Crispy.png';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 
-export function ProductCard( {data}) {
+export function ProductCard({data} ) {
   return (
-    <Row xs={1} md={1} className="g-3">
-      {Array.from({ length: 1 }).map((_, idx) => (
-        <Col>
-          <Card>
-            <Card.Img variant="top" src={data.imagen} />
-            <Card.Body>
-              <Card.Title>{data.nombre}</Card.Title>
-              <Card.Text>
-                {data.ingredientes}
-              </Card.Text>
+   <div className='container' >
+         <div className='row' >
+         <div className='col-md-2' >
+            <Card variant="top" style={{ width: '43rem' }} className='col-md-4'>
+            <Card.Img variant="top" src={data.imagen}  />
+             <Card.Body >
+            < Card.Title>{data.nombre} </Card.Title>
+            <Card.Text>
+            {data.ingredientes}
+            </Card.Text>
+            <Card.Text>
+          {`$ ${data.precio}`}
+            </Card.Text>
+            <Button variant="secondary">Comprar</Button>
             </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
+      </Card>
+    </div>
+    </div>
+    </div>
   );
 }
 
