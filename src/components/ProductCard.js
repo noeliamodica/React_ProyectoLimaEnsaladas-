@@ -1,7 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-export function ProductCard({data} ) {
+export function ProductCard({data, allProducts, setAllProducts} ) {
+
+   const onAddProduct = () => {
+		console.log('add')
+	};
   return (
    <div className='container d-flex justify-content-center' >
          <div className='row ' >
@@ -16,7 +20,7 @@ export function ProductCard({data} ) {
             <Card.Text>
           {`$ ${data.precio}`}
             </Card.Text>
-            <Button variant="secondary">Comprar</Button>
+            <Button  pnClick={() => onAddProduct()} variant="secondary">Agregar al carrito</Button>
             </Card.Body>
       </Card>
     </div>
