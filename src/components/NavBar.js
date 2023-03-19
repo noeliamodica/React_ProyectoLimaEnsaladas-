@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/img/logo-lima.png';
 import { Routes, Route, Link } from 'react-router-dom';
-
 import navIcon1 from '../assets/img/shopping-cart.png';
 import './NavBar.css';
 
+
+
 export const NavBar = () => {
 
-   const [active, setActive] = useState(false);
+
 
    const [activeLink, setActiveLink] = useState('home');
    const [scrolled, seScrolled] = useState(false);
@@ -67,13 +68,14 @@ export const NavBar = () => {
                      <button className="vvd">
                         <span>Iniciar Sesion</span>
                      </button>
-                  </Link>
-                  <div className="social-icon" onClick={() => setActive(!active)}>
+                  </Link >
+                  <Link to="/cart">
+                  <div className="social-icon">
                      <a href="#">
                         <img src={navIcon1} alt="" />
                      </a>
-              
-					</div>
+                     </div>
+               </Link>
                </span>
             </Navbar.Collapse>
          </Container>

@@ -1,9 +1,7 @@
 
 import { ProductCard } from './ProductCard';
 import 'animate.css';
-
 import './Products.css';
-
 import data from '../data.json'
 
 export const Products = () => {
