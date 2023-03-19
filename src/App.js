@@ -5,17 +5,17 @@ import Home from "./pages/Home";
 import { Login } from "./pages/Login"
 import {Register} from "./pages/Register";
 import { ProductCard } from './components/ProductCard';
+import DataProvider from './components/Context/DataContext';
 
 
 
 function App() {
 
 
-  
-
   return (
     <div className="App">
-       <BrowserRouter>
+        <DataProvider>
+         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
@@ -23,8 +23,8 @@ function App() {
                 <Route path="/cart" element={<ProductCard />} />
             </Routes>
             
-        </BrowserRouter>
-
+          </BrowserRouter>
+        </DataProvider>
 
     </div>
   );
