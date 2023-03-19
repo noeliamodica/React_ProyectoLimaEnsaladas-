@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/img/logo-lima.png';
-import { Routes, Route, Link } from 'react-router-dom';
-import navIcon1 from '../assets/img/shopping-cart.png';
+import {  Link } from 'react-router-dom';
 import './NavBar.css';
 
 
@@ -70,11 +69,7 @@ export const NavBar = () => {
                      </button>
                   </Link >
                   <Link to="/cart">
-                  <div className="social-icon">
-                     <a href="#">
-                        <img src={navIcon1} alt="" />
-                     </a>
-                     </div>
+                     🛒
                </Link>
                </span>
             </Navbar.Collapse>
