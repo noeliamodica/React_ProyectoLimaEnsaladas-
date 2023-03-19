@@ -1,22 +1,23 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+
+import { ProductCard } from './ProductCard';
 import 'animate.css';
 import './Products.css';
-import { useContext } from 'react';
-import { dataContext } from './Context/DataContext';
+import data from '../data.json'
 
 export const Products = () => {
    
-   const { data }= useContext(dataContext);
 
-   return data.map((product) => {
-         return (
-            <div key={product.id}>
-           <h3> {product.nombre} </h3>
-           </div>
-       )
-      }                               
-      )
-                       
-  
-}
+   
+
+   return (
+         <div>
+               {data.map((data) => (
+                  <ProductCard  key={data.id} data={data} />
+                      ))
+                        }
+                                     
+        </div>
+
+                               
+   );
+};
