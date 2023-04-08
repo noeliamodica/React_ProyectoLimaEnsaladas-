@@ -5,6 +5,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carrousel.css';
 
+
 export const Carrousel = () => {
    const responsive = {
       superLargeDesktop: {
@@ -34,20 +35,20 @@ export const Carrousel = () => {
                      <h2>Las Populares</h2>
                      <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                         <div className="item">
-                           <img src={Crispy} alt="Image" />
+                        <img src={"/img/Caesar.jpg"} alt='Image'/>
+                           <h5>Ensalada Caesar</h5>
+                        </div>
+                        <div className="item">
+                           <img src={"/img/Clásica.jpg"} alt="Image" />
+                           <h5>Ensalada Clásica</h5>
+                        </div>
+                        <div className="item">
+                           <img src={"/img/Cala.jpg"} alt="Image" />
+                           <h5>Ensalada Cala</h5>
+                        </div>
+                        <div className="item">
+                           <img src={"/img/Crispy.jpg"} alt="Image" />
                            <h5>Ensalada Crispy</h5>
-                        </div>
-                        <div className="item">
-                           <img src={Crudo} alt="Image" />
-                           <h5>Ensalada Crudo</h5>
-                        </div>
-                        <div className="item">
-                           <img src={Frutillas} alt="Image" />
-                           <h5>Ensalada Frutillas</h5>
-                        </div>
-                        <div className="item">
-                           <img src={Frutillas} alt="Image" />
-                           <h5>Ensalada Frutillas</h5>
                         </div>
                      </Carousel>
                   </div>

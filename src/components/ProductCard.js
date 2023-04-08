@@ -10,14 +10,14 @@ export function ProductCard({data} ) {
          <div className='row ' >
          <div className='col-md-2' >
             <Card variant="top" style={{ width: '37rem' }} className='col-md-4'>
-            <Card.Img variant="top" src={data.imagen}  />
+            <Card.Img variant="top" src={data.image}  />
              <Card.Body >
-            < Card.Title>{data.nombre} </Card.Title>
+            < Card.Title>{data.name} </Card.Title>
             <Card.Text>
-            {data.ingredientes}
+            {data.base}
             </Card.Text>
             <Card.Text>
-          {`$ ${data.precio}`}
+          {`$ ${data.price}`}
             </Card.Text>
             <Button   variant="secondary">Agregar al carrito</Button>
             </Card.Body>

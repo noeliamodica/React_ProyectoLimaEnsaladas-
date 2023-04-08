@@ -1,97 +1,114 @@
 
  [
-    {
-        "id": 1,
-        "nombre": "Clásica",
-        "base": "Mix de verdes",
-        "aderezo": "Ranch",
-        "ingredientes": "Mix de verdes, pollo, huevo, zanahoria, queso sardo rayado, tomates cherrys y aderezo ranch.",
-        "imagen": "https://www.recetassinlactosa.com/wp-content/uploads/2016/02/Ensalada-mixta-1.jpg",
-        "precio": 850,
-        "status": "MasVendido"
-    },
-    {
-        "id": 2,
-        "nombre": "Cala",
-        "base": "Rúcula y fideos(penne rigatti)",
-        "aderezo": "Mostaza y miel",
-        "ingredientes": "Rúcula, penne rigatti, pollo, tomates secos, nueces, queso azul y aderezo de mostaza y miel.",
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRm1Z1J-UlC5XIapV3u02kWtghoyc7xLs1fKLywWLFjtzHe4RumD5RoLRLFVENquq2U8&usqp=CAU",
-        "precio": 850,
-        "status": "MasVendido"
-    },
-    {
-        "id": 3,
-        "nombre": "Caesar",
-        "base": "Mix de verdes",
-        "aderezo": "Caesar",
-        "ingredientes": "Mix de verdes, pollo, croûtons, queso sardo rayado, tomates cherrys y aderezo caesar.",
-        "imagen": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/755f697272cbcdc6e5df2adb44b1b705.jpg",
-        "precio": 850,
-        "status": "MasVendido"
-    },
-    {
-        "id": 4,
-        "nombre": "Crispy",
-        "base": "Mix de verdes",
-        "aderezo": "Caesar",
-        "ingredientes": "Mix de verdes, pollo rebozado con pan rallado y copos de maiz, croûtons, queso sardo rayado, tomates cherrys y aderezo caesar.",
-        "imagen": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/755f697272cbcdc6e5df2adb44b1b705.jpg",
-        "precio": 850,
-        "status": "MasVendido"
-    },
-    {
-        "id": 5,
-        "nombre": "Pastrón",
-        "base": "Rúcula y fideos(penne rigatti)",
-        "aderezo": "Reducción de aceto balsámico",
-        "ingredientes": "Rúcula, penne rigatti, pastrón feteado, queso tybo en cubos, morron rojo de conserva, nueces y reducción dulce de aceto balsámico.",
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitFrGuaVyDINMG9IWJ0KIQY0Gb4Bad0pm9SrG71ftcHsJj8ATWiNgP-2NPQf3XDH9OKA&usqp=CAU",
-        "precio": 870
-    },
-    {
-        "id": 6,
-        "nombre": "Peras",
-        "base": "Rúcula",
-        "aderezo": "Vinagreta (Oliva, Aceto, Vinagre y Pimienta)",
-        "ingredientes": "Rúcula, pollo, queso azul, nueces, peras en almíbar y vinagreta.",
-        "imagen": "https://www.recetasjudias.com/wp-content/uploads/2015/12/Ensalada-de-Peras-y-Nueces-caramelizadas.jpg",
-        "precio": 850
-    },
-    {
-        "id": 8,
-        "nombre": "Crudo",
-        "base": "Rúcula y fideos(penne rigatti)",
-        "aderezo": "Reducción dulce de aceto balsámico y pesto genovés",
-        "ingredientes": "Rúcula, penne rigatti, jamón crudo feteado, queso mozzarela en trozos, tomates secos, reducción dulce de aceto balsámico y pesto genovés.",
-        "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/09/ensalada-de-brocoli-con-mayonesa-receta.jpg",
-        "precio": 870
-    },
-    {
-        "id": 9,
-        "nombre": "Brie",
-        "base": "Mix de verdes",
-        "aderezo": "Mostaza y miel",
-        "ingredientes": "Mix de verdes, pollo, queso brie, tomates cherrys, croûtons, nueces, y aderezo de mostaza y miel.",
-        "imagen": "https://okdiario.com/img/2014/07/08/ensalada-de-rucula-y-queso-brie.jpg",
-        "precio": 870
-    },
-    {
-        "id": "10",
-        "nombre": "Atún",
-        "base": "Rúcula",
-        "aderezo": "Vinagreta",
-        "ingredientes": "Mix de verdes, atún de lata (en lomitos), brócoli, arroz yamani, tomates cherrys, cebolla morada y vinagreta.",
-        "imagen": "https://i1.wp.com/irecetasfaciles.com/wp-content/uploads/2021/09/Ensalada-de-atun.jpg?fit=1280%2C720&ssl=1",
-        "precio": 750
-    },
-    {
-        "nombre": "Frutilla",
-        "base": "Rúcula",
-        "aderezo": "Reducción de Aceto Balsámico",
-        "ingredientes": "Rúcula, frutilla, panceta, queso brie, nueces y reducción dulce de aceto balsámico.",
-        "precio": 870,
-        "id": "ensalada1669933701639",
-        "imagen": "http://www.lucullus.ar/wp-content/themes/lucullus2/common/image.php?image=http://www.lucullus.ar/wp-content/uploads/2016/09/Salade-fraise-avocat.jpg&width=750&height=450&cropratio=false"
-    }
+            {
+            "id": 1,
+            "name": "Clásica",
+            "base": "Mix de verdes",
+            "dressing": "Ranch",
+            "description": "Mix de verdes, pollo, huevo, zanahoria, queso sardo rayado, tomates cherrys y aderezo ranch.",
+            "image": "/img/Clásica.jpg",
+            "price": 850,
+            "status": "Mas Vendido",
+            "countInStock": 10
+        },
+        {
+            "id": 2,
+            "name": "Cala",
+            "base": "Rúcula y fideos(penne rigatti)",
+            "dressing": "Mostaza y miel",
+            "description": "Rúcula, penne rigatti, pollo, tomates secos, nueces, queso azul y aderezo de mostaza y miel.",
+            "image": "/img/Cala.jpg",
+            "price": 850,
+            "status": "Mas Vendido",
+            "countInStock": 9
+        },
+        {
+            "id": 3,
+            "name": "Caesar",
+            "base": "Mix de verdes",
+            "dressing": "Caesar",
+            "description": "Mix de verdes, pollo, croûtons, queso sardo rayado, tomates cherrys y aderezo caesar.",
+            "image": "/img/Caesar.jpg",
+            "price": 850,
+            "status": "Mas Vendido",
+            "countInStock": 6
+        },
+        {
+            "id": 4,
+            "name": "Crispy",
+            "base": "Mix de verdes",
+            "dressing": "Caesar",
+            "description": "Mix de verdes, pollo rebozado con pan rallado y copos de maiz, croûtons, queso sardo rayado, tomates cherrys y aderezo caesar.",
+            "image": "/img/Crispy.jpg",
+            "price": 950,
+            "status": "Mas Vendido",
+            "countInStock": 10
+        },
+        {
+            "id": 5,
+            "name": "Pastrón",
+            "base": "Rúcula y fideos(penne rigatti)",
+            "dressing": "Reducción de aceto balsámico",
+            "description": "Rúcula, penne rigatti, pastrón feteado, queso tybo en cubos, morron rojo de conserva, nueces y reducción dulce de aceto balsámico.",
+            "image":  "/img/Salami.jpg",
+            "price": 970,
+            "status": " ",
+            "countInStock": 7
+        },
+        {
+            "id": 6,
+            "name": "Peras",
+            "base": "Peras",
+            "dressing": "Vinagreta (Oliva, Aceto, Vinagre y Pimienta)",
+            "description": "Rúcula, pollo, queso azul, nueces, peras en almíbar y vinagreta.",
+            "image":  "/img/Peras.jpg",
+            "price": 850,
+            "status": " ",
+            "countInStock": 8
+        },
+        {
+            "id": 8,
+            "name": "Crudo",
+            "base": "Rúcula y fideos(penne rigatti)",
+            "dressing": "Reducción dulce de aceto balsámico y pesto genovés",
+            "description": "Rúcula, penne rigatti, jamón crudo feteado, queso mozzarela en trozos, tomates secos, reducción dulce de aceto balsámico y pesto genovés.",
+            "image": "/img/Crudo.jpg",
+            "price": 1000,
+            "status": " ",
+            "countInStock": 11
+        },
+        {
+            "id": 9,
+            "name": "Brie",
+            "base": "Mix de verdes",
+            "dressing": "Mostaza y miel",
+            "description": "Mix de verdes, pollo, queso brie, tomates cherrys, croûtons, nueces, y aderezo de mostaza y miel.",
+            "image": "/img/Brie.jpg",
+            "price": 870,
+            "status": "Mas Vendido",
+            "countInStock": 0
+        },
+        {
+            "id": 10,
+            "name": "Atún",
+            "base": "Atún",
+            "dressing": "Vinagreta",
+            "description": "Mix de verdes, atún de lata (en lomitos), brócoli, arroz yamani, tomates cherrys, cebolla morada y vinagreta.",
+            "image": "/img/Atun.JPG",
+            "price": 850,
+            "status": " ",
+            "countInStock": 3
+        },
+        {
+            "id": 11,
+            "name": "Frutilla",
+            "base": "Rúcula",
+            "dressing": "Reducción de Aceto Balsámico",
+            "description": "Rúcula, frutilla, panceta, queso brie, nueces y reducción dulce de aceto balsámico.",
+            "image": "/img/Frutillas.png",
+            "price": 870,
+            "status": " ",
+            "countInStock": 2
+            
+        }
 ]
