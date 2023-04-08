@@ -2,17 +2,15 @@
 import { ProductCard } from './ProductCard';
 import 'animate.css';
 import './Products.css';
-import productos from '../productos'
+import cartItems from '../cartItems'
 
 export const Products = () => {
    
 
-   
-
    return (
          <div>
-               {productos.map((productos) => (
-                  <ProductCard  key={productos.id} productos={productos} />
+               {cartItems.map((cartItems) => (
+                  <ProductCard  key={cartItems.id} cartItems={cartItems} />
                       ))
                         }
                                      

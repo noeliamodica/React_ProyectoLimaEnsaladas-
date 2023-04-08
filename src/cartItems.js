@@ -1,4 +1,4 @@
-const productos = [
+const cartItems = [
     {
         "id": 1,
         "name": "Clásica",
@@ -111,4 +111,4 @@ const productos = [
         
     }
 ]
- export default productos
+ export default cartItems
