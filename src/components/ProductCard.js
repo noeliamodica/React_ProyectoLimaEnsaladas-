@@ -1,9 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from 'react-router-dom'
 
 export function ProductCard({productos} ) {
 
-  
+
+const navigate = useNavigate();
+
+function handleClick(e) {
+    e.preventDefault();
+    navigate('/cartContainer')
+  }
 
   return (
    <div className='container d-flex justify-content-center' >
@@ -19,7 +26,11 @@ export function ProductCard({productos} ) {
             <Card.Text>
           {`$ ${productos.price}`}
             </Card.Text>
-            <Button   variant="secondary">Agregar al carrito</Button>
+            <Button   
+            variant="secondary"
+            onClick={handleClick}
+
+            >Agregar al carrito</Button>
             </Card.Body>
       </Card>
     </div>

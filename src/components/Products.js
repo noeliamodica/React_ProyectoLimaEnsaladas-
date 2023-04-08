@@ -11,7 +11,7 @@ export const Products = () => {
 
    return (
          <div>
-               {productos.map((data) => (
+               {productos.map((productos) => (
                   <ProductCard  key={productos.id} productos={productos} />
                       ))
                         }
