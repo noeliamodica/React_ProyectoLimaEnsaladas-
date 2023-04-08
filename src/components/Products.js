@@ -2,7 +2,7 @@
 import { ProductCard } from './ProductCard';
 import 'animate.css';
 import './Products.css';
-import data from '../data.json'
+import productos from '../productos'
 
 export const Products = () => {
    
@@ -11,8 +11,8 @@ export const Products = () => {
 
    return (
          <div>
-               {data.map((data) => (
-                  <ProductCard  key={data.id} data={data} />
+               {productos.map((data) => (
+                  <ProductCard  key={productos.id} productos={productos} />
                       ))
                         }
                                      

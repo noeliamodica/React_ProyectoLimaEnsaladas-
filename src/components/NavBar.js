@@ -3,12 +3,12 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/img/logo-lima.png';
 import {  Link } from 'react-router-dom';
 import './NavBar.css';
-
+import { useSelector } from 'react-redux'
 
 
 export const NavBar = () => {
-
-
+   
+   const { amount } = useSelector( (state) => state.cart)
 
    const [activeLink, setActiveLink] = useState('home');
    const [scrolled, seScrolled] = useState(false);
@@ -69,7 +69,7 @@ export const NavBar = () => {
                      </button>
                   </Link >
                   <Link to="/cart">
-                     🛒
+                     🛒 {amount}
                </Link>
                </span>
             </Navbar.Collapse>

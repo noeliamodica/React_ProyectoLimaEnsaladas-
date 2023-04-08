@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-export function ProductCard({data} ) {
+export function ProductCard({productos} ) {
 
   
 
@@ -10,14 +10,14 @@ export function ProductCard({data} ) {
          <div className='row ' >
          <div className='col-md-2' >
             <Card variant="top" style={{ width: '37rem' }} className='col-md-4'>
-            <Card.Img variant="top" src={data.image}  />
+            <Card.Img variant="top" src={productos.image}  />
              <Card.Body >
-            < Card.Title>{data.name} </Card.Title>
+            < Card.Title>{productos.name} </Card.Title>
             <Card.Text>
-            {data.base}
+            {productos.base}
             </Card.Text>
             <Card.Text>
-          {`$ ${data.price}`}
+          {`$ ${productos.price}`}
             </Card.Text>
             <Button   variant="secondary">Agregar al carrito</Button>
             </Card.Body>

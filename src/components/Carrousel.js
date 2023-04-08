@@ -1,6 +1,4 @@
-import Crispy from '../assets/img/Crispy.png';
-import Crudo from '../assets/img/Crudo.jpg';
-import Frutillas from '../assets/img/Ensalada de Frutillas.png';
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Carrousel.css';
