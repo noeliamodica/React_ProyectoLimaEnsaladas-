@@ -8,7 +8,7 @@ const cartItems = [
         "image": "/img/Clásica.jpg",
         "price": 850,
         "status": "Mas Vendido",
-        "countInStock": 10,
+        "amount": 10,
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@ const cartItems = [
         "image": "/img/Cala.jpg",
         "price": 850,
         "status": "Mas Vendido",
-        "countInStock": 9,
+        "amount": 9,
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@ const cartItems = [
         "image": "/img/Caesar.jpg",
         "price": 850,
         "status": "Mas Vendido",
-        "countInStock": 6,
+        "amount": 6,
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@ const cartItems = [
         "image": "/img/Crispy.jpg",
         "price": 950,
         "status": "Mas Vendido",
-        "countInStock": 10,
+        "amount": 10,
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@ const cartItems = [
         "image":  "/img/Salami.jpg",
         "price": 970,
         "status": " ",
-        "countInStock": 7,
+        "amount": 7,
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@ const cartItems = [
         "image":  "/img/Peras.jpg",
         "price": 850,
         "status": " ",
-        "countInStock": 8,
+        "amount": 8,
     },
     {
         "id": 8,
@@ -74,7 +74,7 @@ const cartItems = [
         "image": "/img/Crudo.jpg",
         "price": 1000,
         "status": " ",
-        "countInStock": 11,
+        "amount": 11,
     },
     {
         "id": 9,
@@ -85,7 +85,7 @@ const cartItems = [
         "image": "/img/Brie.jpg",
         "price": 870,
         "status": "Mas Vendido",
-        "countInStock": 0,
+        "amount": 0,
     },
     {
         "id": 10,
@@ -96,7 +96,7 @@ const cartItems = [
         "image": "/img/Atun.JPG",
         "price": 850,
         "status": " ",
-        "countInStock": 3,
+        "amount": 3,
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@ const cartItems = [
         "image": "/img/Frutillas.png",
         "price": 870,
         "status": " ",
-        "countInStock": 2,
+        "amount": 2,
         
     }
 ]

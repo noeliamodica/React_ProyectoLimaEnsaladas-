@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { NavBar } from './NavBar';
 import { ProductCard } from './ProductCard';
 import { clearCart } from '../reducers/cart/cartSlice';
+import {Row, Col, Image, ListGroup, Button, Card, Form, Container }  from 'react-bootstrap';
 
 
 
@@ -15,32 +16,36 @@ export function CartContainer () {
 
     if (amount < 1){
         return(
-            <>
-            <NavBar />
-        <section className='cart'>
-
-                <h2>    Carrito de compras </h2>
-                <h4 className='empty-cart'> Su carrito esta vacio </h4>
-
-        </section>
-        </>
+            
+           
+            <Card>
+            <Col md={3} >
+            <ListGroup.Item>
+                <p>    Carrito de compras </p>
+                <p> Su carrito esta vacio </p>
+            </ListGroup.Item>
+            </Col>
+            </Card>
+             
         )
     }
 
    return (
     <>
-    <NavBar />
-    <section className='cart'>
-
-        <h2>    Carrito de compras </h2>
+         
+         <Container> 
+            <ListGroup variant='flush'>
+            <ListGroup.Item>
+                 <Col>  Carrito de compras </Col>
+            </ListGroup.Item>
+           
              <div> 
-            
-                     
+                      
                 {cartItems.map((item)=>{
                         return <CartItem key={item.id} {...item} />
                 })}
              </div>
-
+             </ListGroup>
              <footer>
                 <hr />
                 <div className='cart-total'>
@@ -51,7 +56,8 @@ export function CartContainer () {
                 > Vaciar carrito </button>
              </footer>
 
-     </section>
+     
+     </Container>
      </>
    )                           
    ;

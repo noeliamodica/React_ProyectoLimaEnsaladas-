@@ -1,15 +1,18 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from 'react-router-dom'
+import { removeItem, increase, decrease } from '../reducers/cart/cartSlice'
+import { useDispatch } from 'react-redux'
 
-
-export function ProductCard({cartItems} ) {
-
+export function ProductCard({cartItems, id} ) {
 
 const navigate = useNavigate();
+const dispatch = useDispatch()
+
 
 function handleClick(e) {
     e.preventDefault();
+    //dispatch(increase({id}))
     navigate('/cartContainer')
   }
 
@@ -25,6 +28,7 @@ function handleClick(e) {
             {cartItems.base}
             </Card.Text>
             <Card.Text>
+              
           {`$ ${cartItems.price}`}
             </Card.Text>
             <Button   
