@@ -5,7 +5,8 @@ import { NavBar } from './NavBar';
 import { ProductCard } from './ProductCard';
 import { clearCart } from '../reducers/cart/cartSlice';
 import {Row, Col, Image, ListGroup, Button, Card, Form, Container }  from 'react-bootstrap';
-
+import { calculateTotals } from '../reducers/cart/cartSlice';
+import { useEffect } from 'react';
 
 
 export function CartContainer () {
@@ -13,6 +14,11 @@ export function CartContainer () {
     const dispatch = useDispatch()
    
     const {cartItems, total, amount} = useSelector((store)=>store.cart) 
+
+    useEffect(()=>{
+        dispatch(calculateTotals());
+    }, [cartItems]);
+
 
     if (amount < 1){
         return(
@@ -49,7 +55,7 @@ export function CartContainer () {
              <footer>
                 <hr />
                 <div className='cart-total'>
-                <h4> total <span>$ {total}  </span> </h4>
+                <h4> total <span>$ {total.toFixed(2)}  </span> </h4>
                 </div>
 
                 <button className='btn clear-btn' onClick={()=>dispatch(clearCart())}
