@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { removeItem, increase, decrease } from '../reducers/cart/cartSlice'
 import { useDispatch } from 'react-redux'
 
-export function ProductCard({cartItems, id} ) {
+export function ProductCard({cartItems, id, amount} ) {
 
 const navigate = useNavigate();
 const dispatch = useDispatch()

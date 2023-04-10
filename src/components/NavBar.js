@@ -6,6 +6,7 @@ import './NavBar.css';
 import { useSelector } from 'react-redux'
 
 
+
 export const NavBar = () => {
    
    const { amount } = useSelector( (state) => state.cart)
@@ -55,7 +56,7 @@ export const NavBar = () => {
                      Nosotros
                   </Nav.Link>
                   <Nav.Link
-                     href="../pages/Login.js"
+                     Link to ="/login"
                      className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
                      onClick={() => onUpdateActiveLink('projects')}
                   >
@@ -63,11 +64,18 @@ export const NavBar = () => {
                   </Nav.Link>
                </Nav>
                <span className="navbar-text">
-                  <Link to="/Login">
+                  <Link to="/login">
                      <button className="vvd">
                         <span>Iniciar Sesion</span>
                      </button>
                   </Link >
+                  <Link to="/register">
+                     <button className="vvd">
+                        <span>Registrarse</span>
+                     </button>
+                  </Link >
+
+
                   <Link to="/cart">
                      🛒 {amount}
                </Link>
