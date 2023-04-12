@@ -7,6 +7,7 @@ import {Register} from "./pages/Register";
 import { ProductCard } from './components/ProductCard';
 import { CartContainer } from './components/CartContainer';
 import DataProvider from './components/Context/DataContext';
+import { ToastContainer} from 'react-toastify';
 
 
 
@@ -26,6 +27,7 @@ function App() {
             </Routes>
             
           </BrowserRouter>
+          <ToastContainer />
         </DataProvider>
 
     </div>
