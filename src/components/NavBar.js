@@ -35,6 +35,12 @@ export const NavBar = () => {
       setActiveLink(value);
    };
 
+   const onLogout = () => {
+      dispatch(logout())
+      dispatch(reset())
+      navigate('/')
+    }
+
    return (
       <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
          <Container>
@@ -73,7 +79,7 @@ export const NavBar = () => {
                
                   <span className="navbar-text">
                  
-                  <button className="vvd">
+                  <button className="vvd" onClick={onLogout}>
                   <FaSignOutAlt /> Cerrar sesion
                   </button>
                   </span>
