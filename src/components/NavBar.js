@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/img/logo-lima.png';
-import {  Link } from 'react-router-dom';
+import {  Link, useNavigate } from 'react-router-dom';
 import './NavBar.css';
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { logout, reset } from '../reducers/user/userSlice'
+import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 
 
 
 export const NavBar = () => {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+   const { user } = useSelector((state) => state.auth)
    
    const { amount } = useSelector( (state) => state.cart)
 
@@ -63,19 +68,35 @@ export const NavBar = () => {
                      Contacto
                   </Nav.Link>
                </Nav>
-               <span className="navbar-text">
-                  <Link to="/login">
-                     <button className="vvd">
-                        <span>Iniciar Sesion</span>
-                     </button>
-                  </Link >
-                  <Link to="/register">
-                     <button className="vvd">
-                        <span>Registrarse</span>
-                     </button>
-                  </Link >
 
+               { user ? (
+               
+                  <span className="navbar-text">
+                 
+                  <button className="vvd">
+                  <FaSignOutAlt /> Cerrar sesion
+                  </button>
+                  </span>
+                  
+               ): (
+                  <>
+                     <span className="navbar-text">
+                     <Link to="/login">
+                     <button className="vvd">
+                     <FaSignInAlt /> Iniciar sesion
+                     </button>
+                     </Link >
+                     <Link to="/register">
+                     <button className="vvd">
+                     <FaUser /> Registrarse
+                     </button>
+                     </Link >
+                     </span>
+                  </>)}
 
+            
+
+                  <span className="navbar-text">
                   <Link to="/cart">
                      🛒 {amount}
                </Link>
